@@ -1,0 +1,48 @@
+body {
+  background-color: #f4d04e;
+  margin: 0;
+  display: flex; /* Используем Flexbox для центрирования всего содержимого */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  height: 100vh; /* Устанавливаем высоту на всю высоту экрана */
+}
+
+.container {
+  background-color: #ffffff;
+  height: 522px;
+  width: 384px;
+  border-radius: 20px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex; /* активируем флекс-контейнер */
+  flex-direction: column; /* элементы располагаются вертикально */
+  gap: 24px; /* вертикальный промежуток между элементами */
+}
+
+.container-main-image {
+  background-image: url("../assets/images/illustration-article.svg");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+}
+
+.container-text {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex; /* активируем флекс-контейнер */
+  flex-direction: column; /* элементы располагаются вертикально */
+  gap: 12px; /* вертикальный промежуток между элементами */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
