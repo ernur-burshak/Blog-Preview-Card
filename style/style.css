@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800; /* Для ExtraBold шрифта */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* Для SemiBold шрифта */
+  font-style: normal;
+}
+
 body {
   background-color: #f4d04e;
   margin: 0;
@@ -5,11 +19,12 @@ body {
   justify-content: center; /* Центрируем по горизонтали */
   align-items: center; /* Центрируем по вертикали */
   height: 100vh; /* Устанавливаем высоту на всю высоту экрана */
+  font-family: Figtree;
 }
 
 .container {
   background-color: #ffffff;
-  height: 522px;
+  height: fit-content;
   width: 384px;
   border-radius: 20px;
   padding: 24px;
@@ -37,10 +52,79 @@ body {
   gap: 12px; /* вертикальный промежуток между элементами */
 }
 
+.learning-text {
+  background-color: #f4d04e;
+  color: #111111;
+  border-radius: 4px;
+  margin: 0; /* Убирает стандартные отступы */
+  padding: 4px 12px; /* Вертикальные и горизонтальные отступы */
+  font-size: 14px; /* Размер шрифта */
+  font-weight: 800; /* Extra Bold */
+  line-height: 150%; /* Межстрочный интервал */
+  letter-spacing: 0px; /* Расстояние между буквами */
+  width: fit-content; /* Подгоняет ширину элемента под его содержимое */
+}
+
+.time-text {
+  color: #111111;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0px;
+  width: fit-content;
+}
+
+.big-text {
+  color: #111111;
+  margin: 0;
+  font-size: 24px; /* Размер шрифта */
+  font-weight: 800; /* Extra Bold */
+  line-height: 150%; /* Межстрочный интервал */
+  letter-spacing: 0px; /* Расстояние между буквами */
+  width: 100%;
+}
+
+.text-description {
+  color: #6b6b6b;
+  margin: 0;
+  font-size: 16px; /* Размер шрифта */
+  font-weight: 600;
+  line-height: 150%; /* Межстрочный интервал */
+  letter-spacing: 0px; /* Расстояние между буквами */
+  width: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
   display: none;
+}
+
+.author {
+  width: fit-content;
+  display: flex; /* активируем флекс-контейнер */
+  flex-direction: row; /* элементы располагаются горизонтально */
+  gap: 12px; /* горизонтальный промежуток между элементами */
+  align-items: center;
+}
+
+.userpic {
+  background-image: url("../assets/images/image-avatar.webp");
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-position: center;
+}
+
+.authorname {
+  color: #111111;
+  margin: 0;
+  font-size: 14px; /* Размер шрифта */
+  font-weight: 600;
+  line-height: 150%; /* Межстрочный интервал */
+  letter-spacing: 0px; /* Расстояние между буквами */
+  width: fit-content;
 }
 
 .attribution a {
