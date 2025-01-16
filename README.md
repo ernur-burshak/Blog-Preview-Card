@@ -64,6 +64,8 @@ Users should be able to:
 }
 ```
 
+- In this task, I also knew how to work with svg images.
+
 ### Continued development
 
 - Mobile-first workflow
