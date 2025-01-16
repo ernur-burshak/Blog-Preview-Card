@@ -1,3 +1,4 @@
+/* Стандартные стили для компьютеров */
 @font-face {
   font-family: "Figtree";
   font-weight: 500, 800;
@@ -7,10 +8,10 @@
 body {
   background-color: #f4d04e;
   margin: 0;
-  display: flex; /* Используем Flexbox для центрирования всего содержимого */
-  justify-content: center; /* Центрируем по горизонтали */
-  align-items: center; /* Центрируем по вертикали */
-  height: 100vh; /* Устанавливаем высоту на всю высоту экрана */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-family: Figtree;
 }
 
@@ -21,11 +22,11 @@ body {
   border-radius: 20px;
   padding: 24px;
   box-sizing: border-box;
-  display: flex; /* активируем флекс-контейнер */
-  flex-direction: column; /* элементы располагаются вертикально */
-  gap: 24px; /* вертикальный промежуток между элементами */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   border: 1px solid #111111;
-  box-shadow: 8px 8px 0px #000000; /* тень вправо и вниз */
+  box-shadow: 8px 8px 0px #000000;
 }
 
 .container-main-image {
@@ -41,22 +42,22 @@ body {
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  display: flex; /* активируем флекс-контейнер */
-  flex-direction: column; /* элементы располагаются вертикально */
-  gap: 12px; /* вертикальный промежуток между элементами */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .learning-text {
   background-color: #f4d04e;
   color: #111111;
   border-radius: 4px;
-  margin: 0; /* Убирает стандартные отступы */
-  padding: 4px 12px; /* Вертикальные и горизонтальные отступы */
-  font-size: 14px; /* Размер шрифта */
-  font-weight: 800; /* Extra Bold */
-  line-height: 150%; /* Межстрочный интервал */
-  letter-spacing: 0px; /* Расстояние между буквами */
-  width: fit-content; /* Подгоняет ширину элемента под его содержимое */
+  margin: 0;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0px;
+  width: fit-content;
 }
 
 .time-text {
@@ -72,10 +73,10 @@ body {
 .big-text {
   color: #111111;
   margin: 0;
-  font-size: 24px; /* Размер шрифта */
-  font-weight: 800; /* Extra Bold */
-  line-height: 150%; /* Межстрочный интервал */
-  letter-spacing: 0px; /* Расстояние между буквами */
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0px;
   width: 100%;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -88,10 +89,10 @@ body {
 .text-description {
   color: #6b6b6b;
   margin: 0;
-  font-size: 16px; /* Размер шрифта */
+  font-size: 16px;
   font-weight: 500;
-  line-height: 150%; /* Межстрочный интервал */
-  letter-spacing: 0px; /* Расстояние между буквами */
+  line-height: 150%;
+  letter-spacing: 0px;
   width: 100%;
 }
 
@@ -103,9 +104,9 @@ body {
 
 .author {
   width: fit-content;
-  display: flex; /* активируем флекс-контейнер */
-  flex-direction: row; /* элементы располагаются горизонтально */
-  gap: 12px; /* горизонтальный промежуток между элементами */
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
   align-items: center;
 }
 
@@ -120,13 +121,46 @@ body {
 .authorname {
   color: #111111;
   margin: 0;
-  font-size: 14px; /* Размер шрифта */
+  font-size: 14px;
   font-weight: 500;
-  line-height: 150%; /* Межстрочный интервал */
-  letter-spacing: 0px; /* Расстояние между буквами */
+  line-height: 150%;
+  letter-spacing: 0px;
   width: fit-content;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Адаптация для мобильной версии */
+@media (max-width: 480px) {
+  .container {
+    width: 327px;
+    height: 501px;
+  }
+
+  .container-main-image {
+    width: 279px;
+  }
+
+  .container-text {
+    width: 279px;
+    height: 173px;
+  }
+
+  .learning-text {
+    font-size: 12px;
+  }
+
+  .time-text {
+    font-size: 12px;
+  }
+
+  .big-text {
+    font-size: 20px;
+  }
+
+  .text-description {
+    font-size: 14px;
+  }
 }
