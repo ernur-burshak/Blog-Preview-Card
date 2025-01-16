@@ -1,15 +1,7 @@
 @font-face {
   font-family: "Figtree";
-  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
-  font-weight: 800; /* Для ExtraBold шрифта */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Figtree";
-  src: url("../assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
-  font-weight: 600; /* Для SemiBold шрифта */
-  font-style: normal;
+  font-weight: 500, 800;
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
@@ -71,7 +63,7 @@ body {
   color: #111111;
   margin: 0;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%;
   letter-spacing: 0px;
   width: fit-content;
@@ -97,7 +89,7 @@ body {
   color: #6b6b6b;
   margin: 0;
   font-size: 16px; /* Размер шрифта */
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%; /* Межстрочный интервал */
   letter-spacing: 0px; /* Расстояние между буквами */
   width: 100%;
@@ -129,7 +121,7 @@ body {
   color: #111111;
   margin: 0;
   font-size: 14px; /* Размер шрифта */
-  font-weight: 600;
+  font-weight: 500;
   line-height: 150%; /* Межстрочный интервал */
   letter-spacing: 0px; /* Расстояние между буквами */
   width: fit-content;
